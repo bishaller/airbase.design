@@ -1,53 +1,108 @@
-title: Airbase
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+#permalink:           pretty
+permalink: /blog/:year/:month/:day/:title/
+relative_permalinks: false
+encoding: utf-8
+
+# Setup
+title:               Airbase Design
+tagline:             Design Base
+description:         Airbase is a collection, repository, wiki or an almanac for product design (digital).
+url: https://airbase.com/
+baseurl: ""
+urlimg: ""
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+paginate: 5
+paginate_path: "/blog/page:num"
+excerpt_separator: <!--more-->
+default_bg: sitebg.jpg
+default_logo: sitelogo.png
+safe: false
+#timezone:    America/Chicago
+future:      true
+
+
+## code highlight options
+syntax_highlighter: rouge
+input: GFM
+
+gems:
+  - github-pages
+  - font-awesome-sass
+  - jekyll-redirect-from
+  - jekyll-mentions
+
+jekyll-mentions:
+  base_url: https://twitter.com
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "rakefile", "README.md", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "LICENSE", "vendor", "assets", "_plugins", "public/dormant"]
+
+# About/contact
 author:
-  name: Bishal Mishra
-  email: hello@bishal.cc
+  name:              Bishal Mishra
+  url:               https://twitter.com/bishaller
+  # avatar:         foo.png
+  email:           hello@bishal.cc
 
-# The `>` after `description:` means to ignore line-breaks until next key.
-# If you want to omit the line-break after the end of text, use `>-` instead.
-description: >
-  Airbase.design is a design platform, list or wiki for ux/product designers. 
-# Build settings
+# Owner/author information
+owner:
+  name:           Bishal Mishra
+  # avatar:         foo.png
+  email:          hello@bishal.cc
+  description: UX & Product Designer
+  
+  twitter:        https://www.twitter.com/bishaller
+  facebook:       https://www.facebook.com/bishaller
+  github:         https://www.github.com/bishaller
+  # stackexchange:  
+  linkedin:       https://www.linkedin.com/in/bishaller
+  instagram:      https://www.instagram.com/bishaller
 
-theme: minima
+## sidebar links:
+# For external links add external: true
+# links:
+#   - title: <i class="iconside iconm-home"></i> Home
+#     url: /
+#   - title: <i class="iconside iconm-user"></i> About
+#     url: /about/
+#   - title: <i class="iconside iconm-quill"></i> Blog
+#     url: /blog/
+#   - title: <i class="fa fa-tags"></i> Tags
+#     url: /tags/
+#   - title: <i class="fa fa-archive"></i> Archive
+#     url: /archive/
+#   - title: <i class="iconside iconm-wordpress"></i> Old Blog
+#     url: https://foo.wordpress.com
+#     external: true
+#   - title: <i class="iconside iconm-envelop"></i> Contact
+#     url: /contact/
+#   - title: <i class="iconside iconm-twitter"></i> Twitter
+#     url: https://twitter.com/abcd
+#     external: true
+#   - title: <i class="iconside iconm-feed2"></i> Feed
+#     url: /feed.xml
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+# Google Custom Search:
+#google_search: xyz123abc
 
-# Theme-specific settings
+# Twitter stream widget:
+# Replace xyz123abc with your twitter widget id from https://twitter.com/settings/widgets
+#twitter_widget_id: xyz123abc
 
-minima:
-  # Minima date format.
-  # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  #
-  # date_format: "%b %-d, %Y"
+# Add disqus username for Disqus comment board:
+# disqus_shortname: B
 
-  # Generate social links in footer.
-  #
-  # social_links:
-  #   - { platform: devto,          user_url: "https://dev.to/jekyll" }
-  #   - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
-  #   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-  #   - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-  #   - { platform: github,         user_url: "https://github.com/jekyll/minima" }
-  #   - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-  #   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
-  #   - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-  #   - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
-  #   - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
-  #   - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
-  #   - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
-  #   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-  #   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-  #   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+# Analytics and webmaster tools stuff goes here
+#google_analytics:   xyz123abc
 
-# If you want to link only specific pages in your header, uncomment this and add the path to the pages in
-# order as they should show up.
-#
-# header_pages:
-#   - about.md
-
-# Set to `true` to show excerpts on the homepage.
-#
-# show_excerpts: false
+#### For dummy website only - remove if you wish ####
+github_repo: https://github.com/bishaller/airbase.design
+# version: 1.1.1
+## END ##
