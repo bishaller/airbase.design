@@ -5,6 +5,7 @@
 permalink: /blog/:year/:month/:day/:title/
 relative_permalinks: false
 encoding: utf-8
+theme: Lanyon
 
 # Setup
 title:               Airbase Design
